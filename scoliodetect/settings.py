@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-vcm-a10k6(mj^ng1@+o@okpok=dkj2_min-14-10$1ztx=hj7l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'scoliodetect.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [BASE_DIR / 'app/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
