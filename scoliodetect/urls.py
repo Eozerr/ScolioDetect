@@ -24,5 +24,6 @@ from app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('login-register/', views.login_register, name='login_register'),  # URL ve view fonksiyonu eşleştiriyoruz
+    path('login-register/', views.login_register, name='login_register'), 
+    path('user/', views.user, name='user'),
 ]
